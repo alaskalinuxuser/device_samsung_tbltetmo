@@ -16,11 +16,12 @@
 
 $(call inherit-product, device/samsung/tbltetmo/full_tbltetmo.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aokp/configs/nfc_enhanced.mk)
-
-# Inherit common PAC phone.
+# Inherit common AOKP phone.
 $(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
 
 PRODUCT_DEVICE := tbltetmo
 PRODUCT_NAME := aokp_tbltetmo
+
+LOCAL_PATH := device/samsung/tbltetmo
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab

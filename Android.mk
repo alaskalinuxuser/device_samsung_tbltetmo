@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter tbltecan tbltetmo,$(TARGET_DEVICE)),)
+ifneq ($(filter tbltetmo,$(TARGET_DEVICE)),)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

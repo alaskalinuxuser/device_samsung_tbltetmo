@@ -3,5 +3,5 @@
 set -e
 
 export VENDOR=samsung
-export DEVICE=trltetmo
-./../../$VENDOR/trlte-common/extract-files.sh $@
+export DEVICE=tbltetmo
+./../../$VENDOR/tblte-common/extract-files.sh $@
